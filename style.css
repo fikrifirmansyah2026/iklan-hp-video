@@ -1,31 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background: #0f172a;
+  background: black;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: sans-serif;
 }
 
+/* Frame rasio 9:16 */
 .phone {
-  width: 250px;
-  height: 500px;
-  border: 10px solid black;
-  border-radius: 30px;
+  width: 100%;
+  max-width: 360px; /* ukuran HP */
+  aspect-ratio: 9 / 16;
   background: #000;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
 }
 
+/* Isi layar */
 .screen {
+  width: 100%;
+  height: 100%;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
   text-align: center;
   padding: 20px;
 }
 
+/* Teks utama */
+h1 {
+  font-size: 24px;
+}
+
+/* Sub teks */
+p {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+/* Tombol */
 button {
-  margin-top: 20px;
-  padding: 10px;
+  padding: 12px 20px;
   background: #3b82f6;
   border: none;
   color: white;
   border-radius: 10px;
-    }
+  font-size: 16px;
+  }
